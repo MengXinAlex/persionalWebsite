@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2018 Marketify
- * Author: Marketify
+ * Copyright (c) 2021 Alex
+ * Author: Alex
  * This file is made for CURRENT TEMPLATE
 */
 
@@ -515,7 +515,7 @@ function arlo_tm_animate_text(){
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["Freelancer", "UI/UX Designer", "Web Developer"],
+			strings: ["Junior Developer", "Lifelong Learner", "Freelancer"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
