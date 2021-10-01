@@ -30,7 +30,6 @@ jQuery(document).ready(function(){
 	arlo_tm_popup_blog();
 	arlo_tm_popupscroll();
 	arlo_tm_about_animation();
-	arlo_tm_kenburn_slider();
 	arlo_tm_ripple();
 	arlo_tm_switcher();
 	arlo_tm_data_images();
@@ -590,29 +589,6 @@ function arlo_tm_popupscroll(){
 	});
 }
 
-// -------------------------------------------------
-// -------------  SLIDER KENBURN  ------------------
-// -------------------------------------------------
-
-function arlo_tm_kenburn_slider(){
-	
-	"use strict";
-	
-		jQuery(function() {
-			jQuery('.arlo_tm_hero_header_wrap .overlay_slider').vegas({
-			timer:false,	
-			animation: [ 'kenburnsUp',  'kenburnsLeft', 'kenburnsRight'],
-			delay:7000,
-
-			slides: [
-				{ src: 'img/hero/1.jpg' },
-				{ src: 'img/hero/2.jpg' },
-				{ src: 'img/hero/3.jpg' },
-			]
-
-		});
-	});
-}
 
 // -------------------------------------------------
 // -------------  RIPPLE  --------------------------
