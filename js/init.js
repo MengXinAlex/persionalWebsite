@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
 	arlo_tm_list_height();
 	arlo_tm_portfolio();
 	arlo_tm_anchor();
-	arlo_tm_contact_form();
+	// arlo_tm_contact_form();
 	arlo_tm_owl_carousel();
 	arlo_tm_animate_text();
 	arlo_tm_projects();
@@ -296,51 +296,51 @@ function arlo_tm_anchor(){
 	});
 }
 
-// -----------------------------------------------------
-// ----------------    CONTACT FORM    -----------------
-// -----------------------------------------------------
+// // -----------------------------------------------------
+// // ----------------    CONTACT FORM    -----------------
+// // -----------------------------------------------------
 
-function arlo_tm_contact_form(){
+// function arlo_tm_contact_form(){
 	
-	"use strict";
+// 	"use strict";
 	
-	jQuery(".contact_form #send_message").on('click', function(){
+// 	jQuery(".contact_form #send_message").on('click', function(){
 		
-		var name 		= jQuery(".contact_form #name").val();
-		var email 		= jQuery(".contact_form #email").val();
-		var message 	= jQuery(".contact_form #message").val();
-		var subject 	= jQuery(".contact_form #subject").val();
-		var success     = jQuery(".contact_form .returnmessage").data('success');
+// 		var name 		= jQuery(".contact_form #name").val();
+// 		var email 		= jQuery(".contact_form #email").val();
+// 		var message 	= jQuery(".contact_form #message").val();
+// 		var subject 	= jQuery(".contact_form #subject").val();
+// 		var success     = jQuery(".contact_form .returnmessage").data('success');
 	
-		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
-		//checking for blank fields	
-		if(name===''||email===''||message===''){
+// 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
+// 		//checking for blank fields	
+// 		if(name===''||email===''||message===''){
 			
-			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
-		}
-		else{
-			// Returns successful data submission message when the entered information is stored in database.
-			jQuery.post("imap.mengxinalex.com:993",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
+// 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
+// 		}
+// 		else{
+// 			// Returns successful data submission message when the entered information is stored in database.
+// 			jQuery.post("imap.mengxinalex.com:993",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
 				
-				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
+// 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
 				
 				
-				if(jQuery(".contact_form .returnmessage span.contact_error").length){
-					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
-				}else{
-					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
-					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
-				}
+// 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
+// 					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
+// 				}else{
+// 					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
+// 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
+// 				}
 				
-				if(data===""){
-					jQuery("#contact_form")[0].reset();//To reset form fields on success
-				}
+// 				if(data===""){
+// 					jQuery("#contact_form")[0].reset();//To reset form fields on success
+// 				}
 				
-			});
-		}
-		return false; 
-	});
-}
+// 			});
+// 		}
+// 		return false; 
+// 	});
+// }
 
 // -----------------------------------------------------
 // --------------------    OWL CAROUSEL    -------------
